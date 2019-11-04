@@ -16,7 +16,7 @@ body = ["you do know hungarians, czechs, romanians are so , they throw #bananas 
     ",just #fucked another one #faggot #asscunt with my big #strapon. we both   ð°  ð±ð  @user @user @user @user @user",
     "rip lvl 93 almost 94 shield charger (~20 ex) | had a ~20 second delay, no mobs around me when the lag staed.   ",
     "@user good morning! hope yours is as happy as mine! extreme #masochist is coming in for a session in a few. i am",
-    "i grew interest in a topic, and was promptly told to ""shut the fuck up"" every time that i decided to show my passion for it.  ",
+    "i grew interest in a topic, and was promptly told to \"\"shut the fuck up\"\" every time that i decided to show my passion for it.  ",
     "fuck you #alzheimer's for taking my dad from me and turning him into a viual stranger   #heabroken",
     "god damn.. i can't have best friends, because they always leave me. this is realy painfull. #alone #pain   #cry",
     "i am who i am. #single #swagalicious   #pinay #filipina #cute",
