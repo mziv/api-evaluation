@@ -1,0 +1,69 @@
+  982  python azure.py 
+  983  python3 azure.py 
+  984  cd ..
+  985  ls
+  986  cd hate-speech-dataset/
+  987  ls
+  988  cd sampled_train/
+  989  ls
+  990  ls | sed -n "$((RANDOM%$(ls | wc -l)+1))p"
+  991  ls | sed -n "$((RANDOM%$(ls | wc -l)+1))p" | cat
+  992  cat 14664558_1.txt 
+  993  ls | sed -n "$((RANDOM%$(ls | wc -l)+1))p" | cat
+  994  cat 14667441_2.txt 
+  995  ls | sed -n "$((RANDOM%$(ls | wc -l)+1))p" | cat
+  996  cat $(ls | sed -n "$((RANDOM%$(ls | wc -l)+1))p")
+  997  arg=$(ls | sed -n "$((RANDOM%$(ls | wc -l)+1))p")
+  998  cat arg
+  999  cat $arg
+ 1000  echo $arg
+ 1001  arg=$(ls | sed -n "$((RANDOM%$(ls | wc -l)+1))p") && echo $arg && cat $arg
+ 1002  echo '\n'
+ 1003  echo \n
+ 1004  arg=$(ls | sed -n "$((RANDOM%$(ls | wc -l)+1))p") && echo $arg && cat $arg && echo
+ 1005  for n in {1..20}; do arg=$(ls | sed -n "$((RANDOM%$(ls | wc -l)+1))p") && echo $arg && cat $arg && echo; 
+ 1006  for n in {1..20}; do arg=$(ls | sed -n "$((RANDOM%$(ls | wc -l)+1))p") && echo $arg && cat $arg && echo; done
+ 1007  for n in {1..20}; do arg=$(ls | sed -n "$((RANDOM%$(ls | wc -l)+1))p") && echo $arg && cat $arg && echo; done > random_files.txt
+ 1008  for n in {1..20}; do arg=$(ls | sed -n "$((RANDOM%$(ls | wc -l)+1))p") && echo $arg && cat $arg && echo; done > random_files2.txt
+ 1009  cd ..
+ 1010  grep "13479789_2.txt"
+ 1011  ls
+ 1012  grep "12842423_1" annotations_metadata.csv 
+ 1013  grep "30458837_2" annotations_metadata.csv 
+ 1014  grep "30566107_1" annotations_metadata.csv 
+ 1015  grep "13459603_1" annotations_metadata.csv 
+ 1016  grep "13449094_1" annotations_metadata.csv 
+ 1017  grep "14096118_1" annotations_metadata.csv 
+ 1018  grep "31731815_1" annotations_metadata.csv 
+ 1019  grep "14662277" annotations_metadata.csv 
+ 1020  grep "30744435_1" annotations_metadata.csv 
+ 1021* grep "1466" annotations_metadata.csv 
+ 1022  cd ..
+ 1023  cd hate-speech-dataset/
+ 1024  ls
+ 1025  cd sampled_t
+ 1026  cd sampled_test/
+ 1027  for n in {1..20}; do arg=$(ls | sed -n "$((RANDOM%$(ls | wc -l)+1))p") && echo $arg && cat $arg && echo; done > ../random_files.txt
+ 1028  for n in {1..20}; do arg=$(ls | sed -n "$((RANDOM%$(ls | wc -l)+1))p") && echo -n $arg && echo -n , && cat $arg && echo; done > ../random_files.txt
+ 1029  for n in {1..20}; do arg=$(ls | sed -n "$((RANDOM%$(ls | wc -l)+1))p") && echo -n $arg && echo -n ', ' && cat $arg && echo; done > ../random_files.txt
+ 1030  for n in {1..20}; do arg=$(ls | sed -n "$((RANDOM%$(ls | wc -l)+1))p") && echo -n $arg && echo -n '\t ' && cat $arg && echo; done > ../random_files.txt
+ 1031  for n in {1..20}; do arg=$(ls | sed -n "$((RANDOM%$(ls | wc -l)+1))p") && echo -n $arg && echo -n ', ' && cat $arg && echo; done > ../random_files.txt
+ 1032  5-4
+ 1033  5 - 4
+ 1034  (-) 5 4
+ 1035  - 5 4
+ 1036  for n in {1..20}; do arg=$(ls | sed -n "$((RANDOM%$(ls | wc -l)+1))p") && echo -n $arg && echo -n ', ' && cat $arg && echo; done > ../random_files.csv
+ 1037  for n in {1..20}; do arg=$(ls | sed -n "$((RANDOM%$(ls | wc -l)+1))p") && echo -n $arg && echo -n ', \"' && cat $arg && echo '\"'; done > ../random_files.csv
+ 1038  for n in {1..20}; do arg=$(ls | sed -n "$((RANDOM%$(ls | wc -l)+1))p") && echo -n $arg && echo -n ', "' && cat $arg && echo '"'; done > ../random_files.csv
+ 1039  for n in {1..20}; do arg=$(ls | sed -n "$((RANDOM%$(ls | wc -l)+1))p") && echo -n $arg && echo -n ', ' && cat $arg && echo '"'; done > ../random_files.csv
+ 1040  python azure.py 
+ 1041  cd ..
+ 1042  cd api-evaluation
+ 1043  ls
+ 1044  cd api-evaluation
+ 1045  python azure.py 
+ 1046  python3 azure.py 
+ 1047  python azure.py 
+ 1048  python3 azure.py 
+ 1049  python3 azure.py > stormfront_azure_eval.csv
+ 1050  history | tail -n 300 > my_bash_history.txt
