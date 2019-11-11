@@ -1,28 +1,18 @@
 ########### Python 3.2 #############
-import http.client, urllib.request, urllib.parse, urllib.error, base64, json, time
+import ast, http.client, urllib.request, urllib.parse, urllib.error, base64, json, time
 
 # https://docs.microsoft.com/en-us/azure/cognitive-services/content-moderator/text-moderation-api
 
-body = ["you do know hungarians, czechs, romanians are so , they throw #bananas at black soccer players, don\'t you? @user @user",
-    "@user @user @user no, just seen this gay gorilla mindset nonsense, and him touting dershowitz as \"clean\" !",
-    "@user the box as pictured contains a single inflatable prep-school-boy sex-doll.",
-    "your desire for miscegenation genocide is the very definition of hate &amp; bigotry, @user   @user @user @user",
-    "even if trump suppoers were correct that they are the majority, that is still a sad reality to be ashamed of.  #misogynist #america",
-    "@user i was into \"\"pimps up hoes down\"\" \"\"hookers at the point\"\" documentaries by brent owens and the cathouse series as a kid lol  ",
-    ",i thought the 500 dollar fine was more effective in discouraging people from littering in the higways.",
-    "@user totally agree gary as i'm sick of british press blaming our fans to sell their crap papers  !!",
-    "#cc   gorilla simulator: you need to do to adapt to the environment. the need to tear the city. material dam",
-    "teen girl killed, 3 others injured in downtown oakland shooting. #guns #mentalillness #gangs ð¨ð¦ð¨ð¦ð¨ð¦ is   #orlando ",
-    ",just #fucked another one #faggot #asscunt with my big #strapon. we both   ð°  ð±ð  @user @user @user @user @user",
-    "rip lvl 93 almost 94 shield charger (~20 ex) | had a ~20 second delay, no mobs around me when the lag staed.   ",
-    "@user good morning! hope yours is as happy as mine! extreme #masochist is coming in for a session in a few. i am",
-    "i grew interest in a topic, and was promptly told to \"\"shut the fuck up\"\" every time that i decided to show my passion for it.  ",
-    "fuck you #alzheimer's for taking my dad from me and turning him into a viual stranger   #heabroken",
-    "god damn.. i can't have best friends, because they always leave me. this is realy painfull. #alone #pain   #cry",
-    "i am who i am. #single #swagalicious   #pinay #filipina #cute",
-    "we can relate! lol! happy #funfriday! #weightloss #healthy #fitness #pizza #fridayfeeling #friday   #weightgain",
-    "@user @user + #bread x one million loaves of bread = me. #math #carbs   #lifestyle #blog ",
-    "michelle obama âape in heelsâ case is just the beginning #donaldtrump  #america"]
+body = ["How much longer are we going to wait for them to take care of themselves ?",
+        "It's people like this that are the face that represents the filth of Islam .",
+        "More black-on-white hate crime videos are posted here : http://ethniccrime.blogspot.com/p/ra...-on-video.html",
+        "We need to deport all nonwhites immediately , that or stop letting more in and sterilize the ones here , that will fix the problem .",
+        "Let mother nature evolve these people naturally because no amount of money or aid is going to drag these ' things ' into the civilized world where they serve absolutely no purpose .",
+        "No doubt they 'll be coming up with chocolate-colored Leprechauns and a Chinese flavored Uncle Sam 's too .",
+        "Sardines and anchovies , for example , are basically 100 percent safe ."]
+
+
+#stormfront
 
 headers = {
     # Request headers
@@ -48,9 +38,15 @@ with open('azure_twitter_log.txt', 'w+') as log:
             response = conn.getresponse()
             data = str(response.read())
             conn.close()
-            print(data)
+            # print(data)
+            # test = ast.literal_eval(data)
+            # print(test["Classification"]["ReviewRecommended"])
+            # print(test)
             log.write(data + "\n")
-            # = json.loads(data[2:len(data) - 1])
+            dj = json.loads(data[2:len(data) - 1])
+            djc = dj['Classification']
+            print(b + "," + str(djc['ReviewRecommended']) + "," + str(djc['Category1']['Score'])
+                + "," + str(djc['Category2']['Score']) + "," + str(djc['Category3']['Score']))
 
             # if (dj['Classification']['ReviewRecommended'] != False):
             #     line = [dj['OriginalText'], dj['Classification']]
@@ -60,6 +56,4 @@ with open('azure_twitter_log.txt', 'w+') as log:
             time.sleep(1)
 
         except Exception as e:
-            print("[Errno {0}] {1}".format(e.errno, e.strerror))
-
-
+            print("[Errno {0}] {1}".format(e, e))
